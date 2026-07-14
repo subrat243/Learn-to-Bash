@@ -16,3 +16,8 @@ function func {
 echo "before function: $var"
 func
 echo "after function: $var"
+
+greeting="Hello World"
+export greeting 
+
+python3 -c 'import os; print(os.getenv("greeting"))'
