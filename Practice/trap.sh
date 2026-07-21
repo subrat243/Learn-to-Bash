@@ -1,80 +1,55 @@
 #!/bin/bash
 
-# ==============================================================================
-# Bash trap Command Practice Script
-# ==============================================================================
-# The 'trap' command allows a script to capture/intercept signals (like Ctrl+C,
-# script termination, or exit events) and execute custom commands or functions.
-# Common signals:
-#   - INT  (SIGINT)  : Sent when user presses Ctrl + C.
-#   - TERM (SIGTERM) : Sent when the process is terminated (default kill signal).
-#   - EXIT           : Triggered when the script finishes execution or exits.
-#   - ERR            : Triggered when a command in the script returns a non-zero status.
-# ==============================================================================
+# The 'trap' command catches signals (like Ctrl+C or script exit) and runs custom code
 
-# ------------------------------------------------------------------------------
-# 1. Cleanup on EXIT signal
-# ------------------------------------------------------------------------------
-# Create a temporary file to demonstrate automatic file cleanup
+# Function to clean up temporary files when the script exits
+cleanup() {
+    echo -e "\nRemoving temporary file..."
+    rm -f "$temp_file"
+    echo "Cleanup finished!"
+}
+
+# Function that runs when Ctrl+C (INT signal) is pressed
+handle_ctrl_c() {
+    echo -e "\nYou pressed Ctrl+C! But trap caught it."
+}
+
+# Function that runs when any command in the script fails
+handle_error() {
+    echo "An error occurred on line $1!"
+}
+
+# Create a temporary file to demonstrate cleanup
 temp_file="/tmp/trap_demo_$$.txt"
 echo "Temporary data" > "$temp_file"
-echo "Created temporary file: $temp_file"
+echo "Created temp file: $temp_file"
 
-# Define a function to perform cleanup tasks
-cleanup() {
-    echo -e "\n[CLEANUP] Script is exiting. Removing temporary file '$temp_file'..."
-    rm -f "$temp_file"
-    echo "[CLEANUP] Cleanup completed."
-}
-
-# 'trap <command/function> EXIT' ensures cleanup runs when script finishes or exits
+# Run 'cleanup' function automatically whenever the script exits
 trap cleanup EXIT
 
+# Run 'handle_ctrl_c' when the user presses Ctrl+C (INT signal)
+trap handle_ctrl_c INT
 
-# ------------------------------------------------------------------------------
-# 2. Intercepting Ctrl+C (INT signal)
-# ------------------------------------------------------------------------------
-# Function executed when user presses Ctrl+C
-handle_sigint() {
-    echo -e "\n[TRAP] Caught INT signal (Ctrl + C)! Custom handler executed."
-}
-
-# 'trap <function> INT' catches the SIGINT signal (Ctrl+C)
-trap handle_sigint INT
-
-
-# ------------------------------------------------------------------------------
-# 3. Intercepting Errors (ERR signal)
-# ------------------------------------------------------------------------------
-# Function executed when any command fails with a non-zero exit status
-handle_error() {
-    echo "[TRAP] Error caught! Command failed on line $1."
-}
-
-# 'trap <command> ERR' catches command failures; $LINENO passes line number
+# Run 'handle_error' with the line number ($LINENO) whenever a command fails
 trap 'handle_error $LINENO' ERR
 
-
-# ------------------------------------------------------------------------------
-# Demonstration / Execution Flow
-# ------------------------------------------------------------------------------
-echo -e "\n--- Part 1: Signal Trapping Demonstration ---"
-echo "Script is running... Press Ctrl+C during sleep to trigger the INT trap."
+echo -e "\n--- Step 1: Testing Ctrl+C Trap ---"
+echo "Press Ctrl+C now if you want to test..."
 sleep 2
 
-echo -e "\n--- Part 2: Error Trapping Demonstration ---"
-echo "Triggering an intentional command error (accessing non-existent file)..."
-ls /path/to/non_existent_file_xyz 2>/dev/null
+echo -e "\n--- Step 2: Testing Error Trap ---"
+echo "Running a command that fails..."
+ls /non_existent_folder_123 2>/dev/null
 
-echo -e "\n--- Part 3: Ignoring Signals and Resetting Defaults ---"
-# Passing empty string '' to trap ignores the signal completely
-echo "Ignoring Ctrl+C (INT signal) for 2 seconds..."
+echo -e "\n--- Step 3: Ignoring Ctrl+C ---"
+# Using empty quotes '' ignores Ctrl+C completely
 trap '' INT
+echo "Ctrl+C is now ignored for 2 seconds..."
 sleep 2
 
-# Passing '-' to trap restores default system behavior for the signal
-echo "Restoring default behavior for Ctrl+C (INT signal)..."
+echo -e "\n--- Step 4: Resetting Ctrl+C to Default ---"
+# Using '-' resets Ctrl+C back to default behavior
 trap - INT
+echo "Ctrl+C restored to default."
 
-echo -e "\nScript execution completed!"
-# The EXIT trap ('cleanup' function) will run automatically below as the script finishes.
+echo -e "\nScript finished! (The EXIT trap will now run automatically)"
