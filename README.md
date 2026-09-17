@@ -29,3 +29,7 @@ Here is the list of lessons I've worked through or am currently working on:
 | 07 | [07. Bash Arrays.md](Lessons/07.%20Bash%20Arrays.md) | Index arrays, associative arrays, declaration, operations, and loops |
 | 08 | [08. Bash if, else, and fi Statements.md](Lessons/08.%20Bash%20if%2C%20else%2C%20and%20fi%20Statements.md) | Conditional statements using `if`, `elif`, `else`, and `fi` |
 | 09 | [09. Bash Comparisons.md](Lessons/09.%20Bash%20Comparisons.md) | Arithmetic comparisons, string comparisons, comparison operators (`-eq`, `-ne`, `-gt`, `-lt`, `-ge`, `-le`) |
+| 10 | [10. Bash File Testing.md](Lessons/10.%20Bash%20File%20Testing.md) | File and directory checks using Bash file test operators |
+| 11 | [11. Bash Loops.md](Lessons/11.%20Bash%20Loops.md) | `for`, `while`, and `until` loops for repeated commands |
+| 12 | [12. Bash Function.md](Lessons/12.%20Bash%20Function.md) | Defining and calling reusable Bash functions |
+| 13 | [13. Bash Select.md](Lessons/13.%20Bash%20Select.md) | Interactive numbered menus using the `select` statement and `PS3` prompt |
