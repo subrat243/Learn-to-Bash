@@ -9,6 +9,7 @@ echo "4. C++"
 
 read -p "Choose your programming language (1-4): " choice
 
+# Match the selected menu number to a language.
 case $choice in
     1)
         echo "You chose Python"
@@ -29,6 +30,7 @@ case $choice in
 
 read -p "Choose a letter A or B: " letter
 
+# Accept either uppercase or lowercase input.
 case $letter in
     a|A)
         echo "You chose A"
