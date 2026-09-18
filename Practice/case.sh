@@ -27,3 +27,16 @@ case $choice in
         ;;
     esac
 
+read -p "Choose a letter A or B: " letter
+
+case $letter in
+    a|A)
+        echo "You chose A"
+        ;;
+    b|B)
+        echo "You chose B"
+        ;;
+    *)
+        echo "Unknown"
+        ;;
+esac
