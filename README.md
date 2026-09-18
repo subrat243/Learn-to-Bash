@@ -33,3 +33,4 @@ Here is the list of lessons I've worked through or am currently working on:
 | 11 | [11. Bash Loops.md](Lessons/11.%20Bash%20Loops.md) | `for`, `while`, and `until` loops for repeated commands |
 | 12 | [12. Bash Function.md](Lessons/12.%20Bash%20Function.md) | Defining and calling reusable Bash functions |
 | 13 | [13. Bash Select.md](Lessons/13.%20Bash%20Select.md) | Interactive numbered menus using the `select` statement and `PS3` prompt |
+| 14 | [14. Bash Case statement.md](Lessons/14.%20Bash%20Case%20statement.md) | Pattern matching with the `case` statement for menu choices and letter input |
