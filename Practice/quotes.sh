@@ -20,3 +20,7 @@ echo 'Hello `date`'
 
 echo "it's a beautiful day"
 
+echo "The $VAR"
+echo "The variable is \"$VAR\""
+echo "Current date: `date`"
+
