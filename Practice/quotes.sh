@@ -24,3 +24,6 @@ echo "The $VAR"
 echo "The variable is \"$VAR\""
 echo "Current date: `date`"
 
+echo $'Hello\nWorld'
+
+echo $'Name:\tSubrat\nRole:\tCybersecurity'
