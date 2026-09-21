@@ -1,10 +1,22 @@
 #!/bin/bash
 
-VAR1="Bash Scripting is fun!"
+VAR="Bash Scripting is fun!"
 
-echo $VAR1
+echo $VAR
 
-echo \$VAR1
+echo \$VAR
 
+echo "\$"
+echo "\""
 echo "\\"
+echo "\*"
+echo "\?"
+
+echo '$VAR'
+
+echo '*.txt'
+echo 'Hello $USER'
+echo 'Hello `date`'
+
+echo "it's a beautiful day"
 
