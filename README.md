@@ -41,3 +41,9 @@ Here is the list of lessons I've worked through or am currently working on:
 | 15 | [15. Bash Quotes and Quotations.md](Lessons/15.%20Bash%20Quotes%20and%20Quotations.md) | Single quotes, double quotes, escaping, and special variable handling |
 | 16 | [16. Bash Arithmetic Operations.md](Lessons/16.%20Bash%20Arithmetic%20Operations.md) | Arithmetic expansion, `let`, `declare -i`, and operators like `+`, `-`, `*`, `/` |
 | 17 | [17. Bash Redirections.md](Lessons/17.%20Bash%20Redirections.md) | Input/output redirection, append, here-documents, and file streams |
+
+---
+
+<footer>
+  Keep exploring, keep learning, and keep building with Bash.
+</footer>
