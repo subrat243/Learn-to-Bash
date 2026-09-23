@@ -14,6 +14,10 @@ The workspace is organized as follows:
 
 ---
 
+## ✅ Current Progress
+
+I have been working through the Bash fundamentals and practicing them in the scripts under [Practice/](Practice). My recent focus includes arithmetic operations with `let` and `declare`, as well as script examples using arguments and simple output formatting.
+
 ## 📚 Table of Lessons
 
 Here is the list of lessons I've worked through or am currently working on:
@@ -34,3 +38,6 @@ Here is the list of lessons I've worked through or am currently working on:
 | 12 | [12. Bash Function.md](Lessons/12.%20Bash%20Function.md) | Defining and calling reusable Bash functions |
 | 13 | [13. Bash Select.md](Lessons/13.%20Bash%20Select.md) | Interactive numbered menus using the `select` statement and `PS3` prompt |
 | 14 | [14. Bash Case statement.md](Lessons/14.%20Bash%20Case%20statement.md) | Pattern matching with the `case` statement for menu choices and letter input |
+| 15 | [15. Bash Quotes and Quotations.md](Lessons/15.%20Bash%20Quotes%20and%20Quotations.md) | Single quotes, double quotes, escaping, and special variable handling |
+| 16 | [16. Bash Arithmetic Operations.md](Lessons/16.%20Bash%20Arithmetic%20Operations.md) | Arithmetic expansion, `let`, `declare -i`, and operators like `+`, `-`, `*`, `/` |
+| 17 | [17. Bash Redirections.md](Lessons/17.%20Bash%20Redirections.md) | Input/output redirection, append, here-documents, and file streams |
