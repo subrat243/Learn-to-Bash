@@ -44,6 +44,4 @@ Here is the list of lessons I've worked through or am currently working on:
 
 ---
 
-<footer>
-  Keep exploring, keep learning, and keep building with Bash.
-</footer>
+Keep learning. Keep building.
