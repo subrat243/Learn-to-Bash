@@ -14,9 +14,9 @@ The workspace is organized as follows:
 
 ---
 
-## ✅ Current Progress
+## 🚀 Explore, Learn, and Keep Improving
 
-I have been working through the Bash fundamentals and practicing them in the scripts under [Practice/](Practice). My recent focus includes arithmetic operations with `let` and `declare`, as well as script examples using arguments and simple output formatting.
+This journey is about continuously exploring Bash, learning new concepts, and improving through hands-on practice. Each lesson and script in this repository is a step toward building stronger shell scripting habits, from fundamentals to practical automation.
 
 ## 📚 Table of Lessons
 
