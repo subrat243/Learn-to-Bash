@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^git status --short && git add \\. && git commit -m \"Add bash practice updates\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
