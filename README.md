@@ -8,9 +8,9 @@ Welcome to my Bash Scripting repository! This repository is designed to document
 
 The workspace is organized as follows:
 
-*   📂 **[Lessons/](file:///home/kaizen/WorkSpace/Learn-to-Bash/Lessons)**: Step-by-step conceptual guides and tutorials covering different Bash topics.
-*   📂 **[Practice/](file:///home/kaizen/WorkSpace/Learn-to-Bash/Practice)**: Practical scripts written to test and apply concepts learned in the lessons.
-*   📂 **[Milestone/](file:///home/kaizen/WorkSpace/Learn-to-Bash/Milestone)**: Larger scripts and projects combining multiple concepts.
+*   📂 **[Lessons/](Lessons/)**: Step-by-step conceptual guides and tutorials covering different Bash topics.
+*   📂 **[Practice/](Practice/)**: Practical scripts written to test and apply concepts learned in the lessons.
+*   📂 **[Milestone/](Milestone/)**: Larger scripts and projects combining multiple concepts.
 
 ---
 
