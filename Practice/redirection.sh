@@ -13,6 +13,9 @@ printf 'This message is appended to standard output.\n' >> "$output_file"
 # The 2> operator sends standard error (file descriptor 2) to another file.
 ls missing-file 2> "$error_file"
 
+# The 2>> operator appends standard error instead of replacing the file.
+ls another-missing-file 2>> "$error_file"
+
 # Read both files so the two streams can be compared in the terminal.
 printf 'Standard output:\n'
 cat "$output_file"
