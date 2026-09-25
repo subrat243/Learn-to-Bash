@@ -28,6 +28,12 @@ printf 'This text is read from standard input.\n' > "$input_file"
 printf 'Input redirected from a file:\n'
 cat < "$input_file"
 
+# A here-document redirects the following lines to a command's standard input.
+printf 'Input redirected with a here-document:\n'
+cat <<'EOF'
+This text comes from the here-document.
+EOF
+
 # Redirect stdout first, then send stderr to the same destination.
 combined_file="combined.txt"
 {
