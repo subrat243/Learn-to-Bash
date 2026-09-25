@@ -16,6 +16,10 @@ ls missing-file 2> "$error_file"
 # The 2>> operator appends standard error instead of replacing the file.
 ls another-missing-file 2>> "$error_file"
 
+# Redirect stderr to /dev/null when an expected error should be ignored.
+printf 'Suppressing an expected error:\n'
+ls missing-file 2> /dev/null
+
 # Read both files so the two streams can be compared in the terminal.
 printf 'Standard output:\n'
 cat "$output_file"
