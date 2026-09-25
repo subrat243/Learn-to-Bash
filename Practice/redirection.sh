@@ -19,5 +19,11 @@ cat "$output_file"
 printf 'Standard error:\n'
 cat "$error_file"
 
+# The < operator uses a file as a command's standard input.
+input_file="input.txt"
+printf 'This text is read from standard input.\n' > "$input_file"
+printf 'Input redirected from a file:\n'
+cat < "$input_file"
+
 # Remove the temporary files created for this demonstration.
-rm -f "$output_file" "$error_file"
+rm -f "$output_file" "$error_file" "$input_file"
