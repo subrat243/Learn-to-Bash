@@ -7,6 +7,7 @@ read a
 
 echo "Nice to meet you $a, could you tell us your last name?"
 
+# A separate read captures the last name in b.
 read b
 
 echo "Thank you $a $b for us your name..."
