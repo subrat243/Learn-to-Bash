@@ -29,6 +29,7 @@ while read -r LINE; do
     ((count++))
 done
 
+# Sequential assignments from index zero make the array length match count.
 # Output the total element count and all elements stored in the array
 echo "Number of elements: ${#arr[@]}"
 echo "${arr[@]}"
