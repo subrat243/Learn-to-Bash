@@ -6,5 +6,6 @@ let result=8+2
 echo "The result of 8 + 2 is: $result"
 
 # Example 2: using command-line arguments.
+# let returns a failing status when the arithmetic result is zero.
 let result=$1+$2
 echo "The result of $1 + $2 is: $result"
