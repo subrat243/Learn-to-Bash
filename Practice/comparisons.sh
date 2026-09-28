@@ -84,6 +84,7 @@ echo "------------------------------"
 # -n checks that s1 is not empty
 # = checks whether both strings have the same value
 echo "This is for the seventh comparison = (strings are equal):"
+# Both conditions must succeed for the combined test to be true.
 if [ -n "$s1" ] && [ "$s1" = "$s2" ]; then
     echo "The strings are equal."
 else
