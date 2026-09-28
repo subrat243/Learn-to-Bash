@@ -65,6 +65,7 @@ function get_hostname {
 }
 
 # Store the hostname returned by get_hostname.
+# Command substitution captures the function's printed output.
 current_host=$(get_hostname)
 
 # Display the current machine's hostname.
