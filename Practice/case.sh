@@ -23,6 +23,7 @@ case $choice in
     4)
         echo "You chose C++"
         ;;
+    # The wildcard branch handles any menu number not listed above.
     *)
         echo "Invalid"
         ;;
