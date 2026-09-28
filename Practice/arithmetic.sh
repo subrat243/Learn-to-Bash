@@ -17,4 +17,4 @@ echo "Division: $((a / b))"
 # Modulus returns the remainder after division.
 echo "Modulus: $((a % b))"
 
-echo "Power: $((2 ** 8))"
+echo "Power: $((3 ** 9))"
