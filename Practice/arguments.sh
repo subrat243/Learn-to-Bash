@@ -17,6 +17,7 @@ echo "Print all arguments as single string: $*"
 # $# stores the total number of arguments passed to the script
 echo "Number of arguments passed: $#"
 
+# Quoting "$@" preserves spaces and empty arguments as separate inputs.
 # Iterating over "$@" treats each argument as a separate element/word
 for arg in "$@"; do
   echo "Arg: $arg"
