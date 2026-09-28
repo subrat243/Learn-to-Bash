@@ -2,6 +2,7 @@
 
 VAR="Bash Scripting is fun!"
 
+# Unquoted expansion can split words and expand wildcard characters.
 # Unquoted expansion evaluates the variable.
 echo $VAR
 
