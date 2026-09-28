@@ -17,4 +17,5 @@ echo "Division: $((a / b))"
 # Modulus returns the remainder after division.
 echo "Modulus: $((a % b))"
 
+# The ** operator performs integer exponentiation in Bash.
 echo "Power: $((3 ** 9))"
