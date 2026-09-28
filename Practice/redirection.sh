@@ -44,6 +44,7 @@ combined_file="combined.txt"
 	printf 'This message is standard output.\n'
 	printf 'This message is standard error.\n' >&2
 } > "$combined_file" 2>&1
+# 2>&1 uses stdout's destination after the preceding redirection is applied.
 printf 'Combined standard output and standard error:\n'
 cat "$combined_file"
 
