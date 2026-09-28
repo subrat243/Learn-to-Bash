@@ -10,6 +10,7 @@ else
     echo "File does not exist."
 fi
 
+# A directory can pass -e while still failing the regular-file test -f.
 # Check whether the path points specifically to a regular file.
 if [ -f "$file" ]; then
     echo "Regular file exists."
