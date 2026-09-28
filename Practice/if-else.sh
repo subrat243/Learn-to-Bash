@@ -21,6 +21,7 @@ echo "3. Java"
 echo -n "Enter your choice of Language (1-3): "
 
 # Continue the loop while choice is equal to 4
+# The loop ends once choice changes from the invalid-choice sentinel 4.
 while [ $choice -eq 4 ]; do
 
     # Read the user's choice
