@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Process every item in the home directory.
+# The shell expands this glob into matching paths before the loop runs.
 for item in /home/kaizen/*; do
 
     # Display the current item before checking its type.
