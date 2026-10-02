@@ -7,6 +7,7 @@ num=0
 echo -n "Enter a number between 5 and 9: "
 read num
 
+# Stop if the value is outside the supported range.
 if ! [ $num -ge 5 -a $num -le 9 ]; then
     echo "WTF... I ask to enter number between 5 and 9, Try Again"
     exit 1
