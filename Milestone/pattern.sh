@@ -26,6 +26,7 @@ for (( i = 1; i <= num; i++ )); do
     echo ""
 done
 
+# Draw the lower half, starting just below the widest row.
 for (( i = num - 1; i >= 1; i-- )); do
     for (( s = i; s <= num; s++ )); do
         echo -n " "
