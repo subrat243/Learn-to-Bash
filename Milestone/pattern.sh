@@ -3,6 +3,7 @@
 # Store the size entered by the user.
 num=0
 
+# Ask for a size in the supported range.
 echo -n "Enter a number between 5 and 9: "
 read num
 
