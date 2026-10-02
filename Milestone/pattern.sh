@@ -13,6 +13,7 @@ if ! [ $num -ge 5 -a $num -le 9 ]; then
     exit 1
 fi
 
+# Draw the upper half of the diamond, including its widest row.
 for (( i = 1; i <= num; i++ )); do
     for (( s = num; s >= i; s-- )); do
         echo -n " "
