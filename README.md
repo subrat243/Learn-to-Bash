@@ -1,24 +1,24 @@
-# 🐚 Bash Scripting Learning Journey
+# Bash Scripting Learning Journey
 
 Welcome to my Bash Scripting repository! This repository is designed to document my journey as I learn shell scripting, starting from basic syntax to advanced automation scripts.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 The workspace is organized as follows:
 
-*   📂 **[Lessons/](Lessons/)**: Step-by-step conceptual guides and tutorials covering different Bash topics.
-*   📂 **[Practice/](Practice/)**: Practical scripts written to test and apply concepts learned in the lessons.
-*   📂 **[Milestone/](Milestone/)**: Larger scripts and projects combining multiple concepts.
+*   **[Lessons/](Lessons/)**: Step-by-step conceptual guides and tutorials covering different Bash topics.
+*   **[Practice/](Practice/)**: Practical scripts written to test and apply concepts learned in the lessons.
+*   **[Milestone/](Milestone/)**: Larger scripts and projects combining multiple concepts.
 
 ---
 
-## 🚀 Explore, Learn, and Keep Improving
+## Explore, Learn, and Keep Improving
 
 This journey is about continuously exploring Bash, learning new concepts, and improving through hands-on practice. Each lesson and script in this repository is a step toward building stronger shell scripting habits, from fundamentals to practical automation.
 
-## 📚 Table of Lessons
+## Table of Lessons
 
 Here is the list of lessons I've worked through or am currently working on:
 
