@@ -15,6 +15,7 @@ fi
 
 # Draw the upper half of the diamond, including its widest row.
 for (( i = 1; i <= num; i++ )); do
+    # Indent each row less as it gets wider.
     for (( s = num; s >= i; s-- )); do
         echo -n " "
     done
